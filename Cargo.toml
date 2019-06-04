@@ -1,0 +1,21 @@
+[package]
+name = "algo_hft"
+version = "0.0.0"
+authors = ["Tom Spooner <spooner10000@gmail.com>"]
+
+[dependencies]
+lfa = { path = "./lfa" }
+rsrl = { path = "./rsrl" }
+
+csv = "1.0"
+rand = "0.5"
+slog = "2.3"
+clap = "2.33"
+rayon = "1.0"
+bincode = "1.1"
+
+serde = "1.0"
+serde_derive = "1.0"
+
+blas-src = { version = "0.2", default-features = false, features = ["openblas"] }
+openblas-src = { version = "0.6", default-features = false, features = ["cblas", "system"] }

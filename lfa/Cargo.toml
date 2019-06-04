@@ -1,0 +1,33 @@
+[package]
+name = "lfa"
+description = "Native rust implementations of linear function approximators."
+authors = ["Tom Spooner <t.spooner@liverpool.ac.uk>"]
+
+version = "0.11.0"
+edition = "2018"
+
+license = "MIT"
+readme = "README.md"
+
+keywords = ["function", "approximation", "linear", "ai", "rl"]
+
+repository = "https://github.com/tspooner/lfa"
+documentation = "https://docs.rs/lfa"
+
+[badges]
+travis-ci = { repository = "tspooner/lfa", branch = "master" }
+coveralls = { repository = "tspooner/lfa", branch = "master", service = "github" }
+
+[dependencies]
+rand = "0.6"
+spaces = "4.5"
+ndarray = "0.12"
+itertools = "0.8"
+elementwise = "0.3"
+
+serde = "1.0"
+serde_derive = "1.0"
+
+[dev-dependencies]
+quickcheck = "0.7"
+seahash = "3.0"

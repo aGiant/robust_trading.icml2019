@@ -1,0 +1,26 @@
+[package]
+name = "rstat"
+description = "Probability distributions and statistics in Rust with integrated fitting routines, convolution support and mixtures"
+
+version = "0.2.0"
+authors = ["Tom Spooner <spooner10000@gmail.com>"]
+
+license = "MIT"
+readme = "README.md"
+
+keywords = ["probability", "statistics", "sampling", "distribution"]
+
+repository = "https://github.com/tspooner/rstat"
+documentation = "https://docs.rs/rstat"
+
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+spaces = "4.6"
+ndarray = "0.12"
+ndarray-linalg = "0.10"
+special-fun = "0.1"
+
+[dev-dependencies]
+blas-src = { version = "0.2", default-features = false, features = ["openblas"] }
